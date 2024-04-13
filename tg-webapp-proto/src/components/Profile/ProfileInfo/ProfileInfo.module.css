@@ -1,0 +1,32 @@
+.profileContainer {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    margin-block: 20px;
+    border-radius: 25px;
+}
+
+.profileContainer .picBackground {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 11%, rgba(53,253,45,0.9724264705882353) 100%);
+
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.profileContainer .picBackground .pic {
+    background-color: white;
+    border-radius: 50%;
+    width: 50%;
+    padding: 2px;
+}
+
+.profileContainer .name {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.profileContainer .bio {
+    padding: 10px;
+}
+

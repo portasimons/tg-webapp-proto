@@ -1,0 +1,32 @@
+.post {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 25px;
+}
+
+.post img {
+    width: 90%;
+    padding: 10px;
+}
+
+.post .description {
+    width: 90%;
+    margin: auto;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.post .text {
+    color: black;
+}
+
+.post .reactions {
+    color: red;
+    font-weight: bold;
+}

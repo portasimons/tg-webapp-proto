@@ -1,0 +1,11 @@
+.header {
+    grid-area: header;
+  
+    background-color: black;
+    font-size: 25px;
+  }
+
+.header .logo {
+  padding: 10px;
+  color: white
+}
