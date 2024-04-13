@@ -1,19 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile/Profile';
+import Dialogs from './components/Dialogs/Dialogs';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Poizon Shop
-        </p>
-      </header>
-      <body className="App-body">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Under construction.</p>
-      </body>
-    </div>
+    <BrowserRouter>
+      <div className="App-wrapper">
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/dialogs" element={<Dialogs />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
