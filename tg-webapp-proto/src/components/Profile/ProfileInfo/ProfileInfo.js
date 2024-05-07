@@ -1,14 +1,15 @@
 import s from './ProfileInfo.module.css'
 
-function ProfileInfo() {
+function ProfileInfo(props) {
+    let profileInfo = props.profileInfo;
+
     return (
         <div className={s.profileContainer}>
             <div className={s.picBackground}>
-                <img className={s.pic} alt="good boy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTl-dk_1ClaPOrcLAUjjNGHt_D2uMcpnJarvXob0phHw&s">
-                </img>
+                <img className={s.pic} alt={profileInfo.alt} src={profileInfo.src}></img>
             </div>
-            <div className={s.name}>Charlie, the Dogg</div>
-            <div className={s.bio}>10 y.o. professional good boy</div>
+            <div className={s.name}>{profileInfo.name}</div>
+            <div className={s.bio}>{profileInfo.bio}</div>
         </div>
     )
 }

@@ -7,10 +7,10 @@ function Navbar() {
     return (
         <nav className={classes.navbar}>
             <div>
-                <NavLink to="/dialogs">Dialogs</NavLink>
+                <NavLink to="/profile">Profile</NavLink>
             </div>
             <div>
-                <NavLink to="/profile">Profile</NavLink>
+                <NavLink to="/dialogs">Dialogs</NavLink>
             </div>
             {/* <div className={classes.item}>Profile</div>
                 <div className={`${classes.item} ${classes.active}`}>
